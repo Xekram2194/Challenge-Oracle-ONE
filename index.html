@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img class="logo" src="img/Vector.svg" alt="">
+    <div class="wrapper">
+        <div class="principalContainer">
+            <div class="principal">
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Ingrese el Texto Aqui"></textarea>
+                <div class="botones">
+                    <p><i><img src="img/alert.png" alt=""></i>Solo letras minúsculas y sin acentos</p>
+                    <div class="action">
+                        <button class="encriptar" onclick="resolve('encriptar')">Encriptar</button>
+                        <button class="desencriptar" onclick="resolve('desencriptar')">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resultado">
+                    <img src="img/Muñeco.svg" alt="" width="100%">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                
+                <div class="resultado2 hide">
+                    <p id="resultadoTexto"></p>
+                    <button class="desencriptar" onclick="copiarResultado()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
